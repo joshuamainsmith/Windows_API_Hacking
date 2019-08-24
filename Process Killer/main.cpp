@@ -35,10 +35,7 @@ int wmain(int argc, wchar_t** argv)
 );*/
 	DWORD dwThreadId = GetWindowThreadProcessId(hWnd, &dwProcessId);
 
-	if (dwThreadId == 0)
-	{
-		printf("Here dwThreadId\n");
-	}
+	printf("Thread ID: %ld\n", dwThreadId);
 
 	DWORD dwDesiredAccess = PROCESS_ALL_ACCESS;
 	BOOL bInheritHandle = false;
