@@ -22,7 +22,7 @@ int wmain(int argc, wchar_t** argv)
 
 	if (hWnd == NULL)
 	{
-		printf("Error finding window: %ld\n", GetLastError());
+		printf("Could not find window, error: %ld\n", GetLastError());
 		return 1;
 	}
 
@@ -57,7 +57,7 @@ int wmain(int argc, wchar_t** argv)
 	}
 
 	if (hProcess <= 0)
-		printf("Handle Not Created!\n");
+		printf("Handle Not Created!, Error: %ld\n", GetLastError());
 	else
 		printf("Handle Created!\n");
 
