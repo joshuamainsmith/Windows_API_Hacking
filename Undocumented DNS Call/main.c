@@ -38,6 +38,8 @@ int wmain(int argc, wchar_t** argv)
 		printf("[INFO] DNS Entry: %ls - Type: %d\n", DNS_Entry->recName, DNS_Entry->wType);
 		DNS_Entry = DNS_Entry->pNext;
 	}
+	
+	printf("[INFO] DNS Entry: %ls - Type: %d\n", DNS_Entry->recName, DNS_Entry->wType);
 
 	printf("[INFO] DNS Cache Table Dumped\n");
 
